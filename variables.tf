@@ -29,3 +29,9 @@ variable "ecs_cluster_name" {
     type = string
     default = "dev-ecs-cluster"
 }
+
+variable "tags_ecs" {
+  description = "A map of tags to add to ECS Cluster"
+  type        = map(string)
+  default     = {"Name" = "dev-ecs"}
+}

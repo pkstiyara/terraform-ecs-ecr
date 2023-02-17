@@ -7,4 +7,5 @@ module "alb" {
   load_balancer_type = "application"
 
   vpc_id             = module.vpc.vpc_id
+
 }
